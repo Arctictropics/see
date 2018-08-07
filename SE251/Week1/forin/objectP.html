@@ -1,0 +1,48 @@
+﻿<!Doctype HTML>
+<html>
+<head>
+<title>Level 0 Boss Challenge</title>
+<meta charset="UTF-8">
+  <meta name="description" content="Level 0">
+  <meta name="keywords" content="Level 0, Game Prototyping, New England Institute of Technology">
+  <meta name="author" content="Zach Poole">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>Zach Poole</p>
+<script type="text/javascript">
+
+var ray = [];
+
+
+
+
+for(var i=0; i<100; i++){
+
+var temp = {index: i + 1, label:undefined}
+ray[i] = temp;
+
+if(ray[i].index%2 === 0 && ray[i].index%3 === 0)
+	{
+	ray[i].label = "Fizz Buzz";
+	}//fizz & buzz
+else if(ray[i].index%2 === 0)
+	{
+	ray[i].label = "Fizz";
+	}//fizz
+else if(ray[i].index%3 === 0)
+	{
+	ray[i].label = "Buzz";
+	}//buzz	
+}//for
+
+    for (var i = 0; i < ray.length; i++) {
+        for (value in ray[i]) {
+            console.log(ray[i][value])
+        }//for in
+    }//for
+
+
+</script>
+</body>
+</html>

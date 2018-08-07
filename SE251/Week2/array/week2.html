@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week 2 Files</title>
+<style type="text/css">
+	.border{border:1px solid black;}
+</style>
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+	//Use this Array of objects to complete the assignment.
+	var people =[
+		{first:"Jason", last:"Vorhees", credit:"Friday the 13th"},
+		{first:"Freddy", last:"Krueger", credit:"A Nightmare on Elm Street" },
+		{first:"Roger", last:"Rabbit", credit:"Who Framed Roger Rabbit" },
+		{first:"Kevin", last:"McCallister", credit:"Home Alone" },
+		{first:"Godzilla", last:"King of The Monsters", credit:"Godzilla" },
+		{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
+		{first:"Marion", last:"Cobretti", credit:"Cobra" }
+	]
+	
+	var body = document.querySelector('body');
+
+
+var div = document.createElement("div");
+div.style.backgroundColor="blue";
+var p = document.createElement("p");
+var message = document.createTextNode(people[0].first);
+
+div.appendChild(p);
+p.appendChild(message);
+body.appendChild(div);
+
+/*var message = "";
+for(value in schools)
+{
+ 
+  message += '<div>';
+    message += '<p>';
+      message += schools[value].name;
+       message += '<br/>';
+      message += schools[value].url;
+    message += '</p>';
+  message += '</div>';
+}*/
+	
+</script>
+
+</html>
